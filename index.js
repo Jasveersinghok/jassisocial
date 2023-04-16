@@ -10,7 +10,7 @@ const auth = require("./routes/auth");
 const post = require("./routes/post");
 const path = require("path")
 const multer = require("multer")
-const port = process.env.PORT 
+const port = process.env.PORT || 8800
 const app = express();
 //using middleware
 app.use(cors())
