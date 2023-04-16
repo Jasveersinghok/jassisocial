@@ -1,5 +1,6 @@
 //importing modules
  require("./database");
+require("mongoose")
 const express = require("express");
 const helmet = require("helmet");
 const morgan = require("morgan");
@@ -10,7 +11,7 @@ const auth = require("./routes/auth");
 const post = require("./routes/post");
 const path = require("path")
 const multer = require("multer")
-const port = process.env.PORT 
+const port = process.env.PORT || 8800
 const app = express();
 //using middleware
 app.use(cors())
