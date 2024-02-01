@@ -49,5 +49,5 @@ app.post("/api/upload",upload.single("file"),(req,res)=>{
 //listening
 app.listen(process.env.PORT, (err) => {
   if (err) console.log("Error in server setup");
-  console.log("Server listening on Port", port);
+  console.log("Server listening on Port", process.env.PORT);
 });
